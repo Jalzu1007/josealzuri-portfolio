@@ -67,7 +67,7 @@ h2 {
     justify-content: left;
     align-items: start;
     margin: 0 10px 20px 10px ;
-    padding: 8-px;
+    padding: 8px;
     border-radius: 20px;
     box-shadow: 0 0 5px #2B3467;
     color: #2B3467;
@@ -92,7 +92,7 @@ h2 {
     justify-content: left;
     align-items: start;
     margin: 0 10px 20px 10px ;
-    padding: 8-px;
+    padding: 8px;
     border-radius: 20px;
     box-shadow: 0 0 5px #2B3467;
     color: #2B3467;
@@ -146,14 +146,14 @@ h2 {
 }
 
 .project-item img:hover {
-    filter: blur(5px)
+    filter: blur(3px)
 }
 
 .project-item a:hover {
     color: white;
 }
 
-/*Prework Study Guide style*/
+/*Placeholder styling*/
 .project-item-2 {
     box-sizing: content-box;
     background-color: #748DA6;
@@ -162,6 +162,67 @@ h2 {
     width: 200px;
     height: 225px;
     border: 5px solid #2B3467;
-    position: relative;
-    bottom: 136px
+   margin: 10px;
 }
+
+.project-item-2 img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+   
+.project-item-2 img:hover {
+    filter: blur(3px)
+}
+
+/*Contact Me styling*/
+.contact-me-box {
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+    margin: 0 10px 20px 10px ;
+    padding: 8px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #2B3467;
+    color: #2B3467;
+}
+
+.contact-me-title {
+    padding: 5px 0 0 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contact-me-content a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #2B3467;
+    margin: 0 0 0 240px;
+}
+
+.contact-me-content a:hover {
+    color: white;
+}
+
+h4 { 
+    font-size: 25px;
+    color: #2B3467;
+    margin: 70px 0 0 570px;
+}
+
+.home {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #2B3467;
+    margin: 20px 0 0 670px;
+}
+
+.home:hover {
+    color: white;
+}
+
