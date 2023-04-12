@@ -1,3 +1,6 @@
+/*CSS Variables styling*/
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,7 +12,7 @@ body {
     background-color: #D8D8D8;
 }
 
-/* Nav Flex Start*/
+/* Nav styling*/
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -38,6 +41,7 @@ nav a:hover {
     color: white;
 } 
 
+/*Header styling*/
 h2 {
     font-size: 35px;
     margin-bottom: 5px;
@@ -61,6 +65,7 @@ h2 {
     width: 300px;  
 }
 
+/*About Me styling*/
 .about-me-box {
     display: flex;
     flex-direction: row;
@@ -86,6 +91,7 @@ h2 {
     text-align: center;
 }
 
+/*Projects styling*/
 .projects-box {
     display: flex;
     flex-direction: row;
@@ -208,7 +214,8 @@ h2 {
     color: white;
 }
 
-h4 { 
+/*Footer styling*/
+h3 { 
     font-size: 25px;
     color: #2B3467;
     margin: 70px 0 0 570px;
@@ -225,4 +232,5 @@ h4 {
 .home:hover {
     color: white;
 }
+
 
