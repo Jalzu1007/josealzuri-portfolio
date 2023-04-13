@@ -1,15 +1,21 @@
 /*CSS Variables styling*/
-
+:root {
+  --bg-color: #D8D8D8;
+  --main-color: #2B3467;
+  --hover-color: white;
+  --box-color: #748DA6; 
+  --font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: var(--font-family);
 }
 
 body {
-    background-color: #D8D8D8;
+    background-color: var(--bg-color);
 }
 
 /* Nav styling*/
@@ -21,13 +27,13 @@ nav {
     align-items: center;
     width: 100%;
     height: 10vh;  
-    color: #2B3467;
+    color: var(--main-color);
 }
  
 nav a {
     text-decoration: none;
     font-size: 25px;
-    color: #2B3467;
+    color: var(--main-color);
     margin: 20px;
 }
 
@@ -38,7 +44,7 @@ nav img {
 }
 
 nav a:hover {
-    color: white;
+    color: var(--hover-color);
 } 
 
 /*Header styling*/
@@ -53,7 +59,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #2B3467;
+    color: var(--main-color);
     font-size: 30px;
     padding: 10px;
     margin-bottom: 20px;
@@ -74,8 +80,8 @@ h2 {
     margin: 0 10px 20px 10px ;
     padding: 8px;
     border-radius: 20px;
-    box-shadow: 0 0 5px #2B3467;
-    color: #2B3467;
+    box-shadow: 0 0 5px var(--main-color);
+    color: var(--main-color);
 }
 
 .about-me-title {
@@ -100,8 +106,8 @@ h2 {
     margin: 0 10px 20px 10px ;
     padding: 8px;
     border-radius: 20px;
-    box-shadow: 0 0 5px #2B3467;
-    color: #2B3467;
+    box-shadow: 0 0 5px var(--main-color);
+    color: var(--main-color);
 }
 
 .projects-title {
@@ -123,13 +129,13 @@ h2 {
 /*Horiseon Project style*/
 .project-item {
     box-sizing: content-box;
-    background-color: #748DA6;
+    background-color: var(--box-color);
     border-radius: 10px;
-    box-shadow: 0 0 25px #2B3467;
+    box-shadow: 0 0 25px var(--main-color);
     width: 440px;
     height: 500px;
     margin: 30px;
-    border:5px solid #2B3467;
+    border:5px solid var(--main-color);
 }
 
 .project-item a {
@@ -138,7 +144,7 @@ h2 {
     top: 450px;
     left: 160px;
     text-decoration: none;
-    color: #2B3467;
+    color: var(--main-color);
 }
 
 .project-item img {
@@ -147,7 +153,6 @@ h2 {
     position: relative;
     bottom: 420px;
     right: 115px;
-    border: 5px solid black;
     padding: 50px;
 }
 
@@ -156,18 +161,18 @@ h2 {
 }
 
 .project-item a:hover {
-    color: white;
+    color: var(--hover-color);
 }
 
 /*Placeholder styling*/
 .project-item-2 {
     box-sizing: content-box;
-    background-color: #748DA6;
+    background-color: var(--box-color);
     border-radius: 10px;
-    box-shadow: 0 0 25px #2B3467;
+    box-shadow: 0 0 25px var(--main-color);
     width: 200px;
     height: 225px;
-    border: 5px solid #2B3467;
+    border: 5px solid var(--main-color);
    margin: 10px;
 }
 
@@ -193,12 +198,12 @@ h2 {
     padding: 8px;
     height: 50px;
     border-radius: 20px;
-    box-shadow: 0 0 5px #2B3467;
-    color: #2B3467;
+    box-shadow: 0 0 5px var(--main-color);
+    color: var(--main-color);
 }
 
 .contact-me-title {
-    padding: 5px 0 0 5px;
+    padding: 5px 0 0 25px;
     text-align: center;
     font-size: 25px;
 }
@@ -206,31 +211,240 @@ h2 {
 .contact-me-content a {
     font-size: 25px;
     text-decoration: none;
-    color: #2B3467;
-    margin: 0 0 0 240px;
+    color: var(--main-color);
+    padding: 0 0 0 225px
 }
 
 .contact-me-content a:hover {
-    color: white;
+    color: var(--hover-color);
 }
 
 /*Footer styling*/
+footer {
+  display:flexbox;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+  color:var(--main-color);
+}
 h3 { 
     font-size: 25px;
-    color: #2B3467;
-    margin: 70px 0 0 570px;
+    
 }
 
 .home {
-    display: block;
     font-size: 20px;
     text-decoration: none;
-    color: #2B3467;
-    margin: 20px 0 0 670px;
+    color: var(--main-color);
 }
 
 .home:hover {
-    color: white;
+    color: var(--hover-color);
 }
 
+/*Media Queries styling*/
+@media (max-width: 1100px) {
+  .projects-box {
+    flex-direction: columns;
+    align-items: center;
+    margin: 0 20px 40px 20px;
+  }
+  
+  .project-item {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .project-item img {
+    width: 80;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+  }
+  
+  .project-item a {
+    font-size: 25px;
+    position: relative;
+    top: auto;
+    left: 20px;
+    text-align: center;
+  }
 
+  .contact-me-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 20px 10px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #2B3467;
+    color: #2B3467;
+  }
+  
+  .contact-me-title {
+    font-size: 25px;
+  }
+  
+  .contact-me-content a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #2B3467;
+    padding: 0 100px 0 100px
+  } 
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+
+  nav {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  nav img {
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .header-subtitle {
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .avatar-image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .about-me-box {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .about-me-title {
+    height: auto;
+    margin: 25px;
+    font-size: 20px;
+  }
+
+  .about-me-content {
+    padding: 20px 20px 30px 20px;
+    font-size: 18px;
+  }
+
+  .projects-box {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .projects-title {
+    height: auto;
+    margin: 20px;
+    padding: 50px 0;
+    font-size: 25px;
+  }
+
+  .projects-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-item {
+    width: 90%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .project-item a {
+    font-size: 25px;
+    position: static;
+    top: 0;
+    left: 0;
+    margin: 10px;
+  }
+
+  .project-item img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    position: static;
+    bottom: 0;
+    right: 0;
+  }
+
+  .project-item-2 {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .project-item-2 img {
+    width: 100%;
+    height: auto;
+    position: static;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+
+  .contact-me-box {
+    height: auto;
+    display:flexbox; 
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-me-title {
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .contact-me-content a {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media (min-width:680px) and (max-width:1003px) {
+  .project-item {
+    width: 95%;
+    height: auto;
+    margin: 10px;
+  }
+  
+  .projects-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-item img {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .contact-me-content a {
+    font-size: 20px;
+    padding: 0 0 0 100px;
+  }
+}

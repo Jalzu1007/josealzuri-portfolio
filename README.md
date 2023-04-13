@@ -4,7 +4,7 @@
 
 This project is my personal portfolio web page that showcases my work, skills, and talent to potential hiring managers. The web page presents my name, an avatar, and links to sections about me, my projects, and how to contact me. It displays titled images of the applications, which are deployed on the web, and their images are clickable and will take the user to the deployed application.
 
-The motivation for building this project is to create an effective portfolio that highlights my best work as well as the thought processes behind it. In addition, having several deployed projects is a minimum requirement to receive an initial interview at many companies. This web page will enable me to apply the core skills I have learned, such as flexbox, media queries, and CSS variables, while creating something that I can use during my job search.
+The motivation for building this project is to create an effective portfolio that highlights my best projects as well as the thought processes behind it. In addition, having several deployed projects is a minimum requirement to receive an initial interview at many companies. This web page will enable me to apply the core skills I have learned, such as flexbox, media queries, and CSS variables, while creating something that I can use during my job search.
 
 ## Installation
 
