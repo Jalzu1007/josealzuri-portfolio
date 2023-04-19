@@ -30,7 +30,7 @@ Deployed website:
 
 https://jalzu1007.github.io/josealzuri-portfolio/
 
-Screenshot of the refactored code:
+Screenshot of the portfolio website:
 
 ![alt text](assets/images/portfolio-screenshot.png) ![alt text](assets/images/portfolio-screenshot2.png) ![alt text](assets/images/portfolio-screenshot3.png) 
 
