@@ -176,12 +176,22 @@ h2 {
    margin: 10px;
 }
 
+.project-item-2 a {
+text-decoration: none;
+color: var(--main-color);
+}
+
+.project-item-2 a:hover {
+  color: var(--hover-color);
+}
+
+
 .project-item-2 img {
     width: 100px;
     height: 100px;
-    position: relative;
+    /* position: relative;
     top: 50px;
-    left: 50px;
+    left: 50px; */
 }
    
 .project-item-2 img:hover {
